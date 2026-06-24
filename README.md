@@ -26,6 +26,9 @@ Amazon's global retail operations span **7 regions** and **100+ countries** with
 | **KPIs (Numerical Facts)** | Total Revenue, Total Profit, Total Cost, Units Sold |
 | **Categorical Variables** | Region, Country, Item Type, Sales Channel, Order Priority |
 
+Raw data: [`AmazonSalesData.csv`](AmazonSalesData.csv)
+Cleaned data: [`Amazon_Sales_Clean.xls`](Amazon_Sales_Clean.xls)
+
 ---
 
 ## 🛠️ Tech Stack
@@ -47,7 +50,7 @@ Amazon's global retail operations span **7 regions** and **100+ countries** with
 | Profitability metric | Created `Profit Margin %` = (Total Profit ÷ Total Revenue) × 100 |
 | Validation | Confirmed no missing values or duplicate orders |
 
-Full step-by-step code is in [`notebooks/Amazon_Data_Cleaning.ipynb`](notebooks/Amazon_Data_Cleaning.ipynb).
+Full step-by-step code is in [`Amazon_Data_Cleaning.ipynb`](Amazon_Data_Cleaning.ipynb).
 
 ---
 
@@ -78,43 +81,35 @@ Full step-by-step code is in [`notebooks/Amazon_Data_Cleaning.ipynb`](notebooks/
 
 | Executive Summary | Regional Analysis |
 |---|---|
-| ![Executive Summary](screenshots/03_executive_summary.png) | ![Regional Analysis](screenshots/04_regional.png) |
+| ![Executive Summary](03_executive_summary.png) | ![Regional Analysis](04_regional.png) |
 
 | Category Performance | Time Series Trend |
 |---|---|
-| ![Category Performance](screenshots/06_category.png) | ![Time Series](screenshots/08_timeseries.png) |
+| ![Category Performance](06_category.png) | ![Time Series](08_timeseries.png) |
 
-*(See the `screenshots/` folder for all dashboard pages)*
+**All dashboard pages:**
+- [Title Page](01_title.png)
+- [Business Problem](02_problem.png)
+- [Executive Summary](03_executive_summary.png)
+- [Regional Analysis](04_regional.png)
+- [Country Performance](05_country.png)
+- [Category Performance](06_category.png)
+- [Sales Channel Comparison](07_channel.png)
+- [Time Series Trend](08_timeseries.png)
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Contents
 
-```
-Amazon-Global-Sales-Analysis/
-│
-├── README.md                              ← You are here
-├── .gitignore
-├── data/
-│   └── Amazon_Sales_Clean.csv              ← Cleaned dataset
-├── notebooks/
-│   └── Amazon_Data_Cleaning.ipynb          ← Python cleaning & EDA
-├── powerbi/
-│   └── Amazon_Sales_Analysis.pbix          ← Power BI report file
-├── report/
-│   └── Amazon_Global_Sales_Report.docx     ← Full written report
-├── presentation/
-│   └── Amazon_Final_Presentation.pptx      ← Slide deck
-└── screenshots/
-    ├── 01_title.png
-    ├── 02_problem.png
-    ├── 03_executive_summary.png
-    ├── 04_regional.png
-    ├── 05_country.png
-    ├── 06_category.png
-    ├── 07_channel.png
-    └── 08_timeseries.png
-```
+| File | Description |
+|------|-------------|
+| `Amazon_Data_Cleaning.ipynb` | Python notebook — data cleaning & exploratory analysis |
+| `AmazonSalesData.csv` | Raw dataset (source: Kaggle) |
+| `Amazon_Sales_Clean.xls` | Cleaned dataset, ready for Power BI |
+| `AyeshaSalahuddin(29157).pbix` | Power BI report file — open in Power BI Desktop |
+| `Final_Report.docx` | Full written report with insights & recommendations |
+| `Final_Presentation_Amazon.pptx` | Presentation slide deck |
+| `01_title.png` – `08_timeseries.png` | Screenshots of each Power BI dashboard page |
 
 ---
 
@@ -122,13 +117,13 @@ Amazon-Global-Sales-Analysis/
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/amazon-global-sales-analysis.git
+   git clone https://github.com/ayeshasalahuddin/amazon-global-sales-analysis.git
    ```
 2. **Run the data cleaning notebook**
-   - Open `notebooks/Amazon_Data_Cleaning.ipynb` in Jupyter Notebook, VS Code, or Google Colab
-   - Run all cells to regenerate the cleaned CSV
+   - Open `Amazon_Data_Cleaning.ipynb` in Jupyter Notebook, VS Code, or Google Colab
+   - Run all cells to regenerate the cleaned dataset
 3. **Open the Power BI report**
-   - Open `powerbi/Amazon_Sales_Analysis.pbix` in [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
+   - Open `AyeshaSalahuddin(29157).pbix` in [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
    - Explore the 9 interactive pages: Title, Problem Statement, Executive Summary, Regional Analysis, Country Performance, Category Analysis, Channel Comparison, Time Series, and Recommendations
 
 ---
