@@ -149,4 +149,4 @@ Total Orders = COUNTROWS('Amazon Sales data')
 
 ## 📄 License
 
-This project is for educational purposes as part of a Business Intelligence course assignment.
+This project is for educational purposes as part of a Business Intelligence course assignment. 
